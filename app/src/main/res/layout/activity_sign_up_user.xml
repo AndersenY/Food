@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpUserActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="217dp"
+        android:layout_height="169dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Зарегистрируйте свою учетную запись"
+        android:textColor="@color/lightBlueLogo"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-condensed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/sign_up_user_name"
+        android:layout_width="330dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_bg"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="15dp"
+        android:elevation="1dp"
+        android:inputType="text"
+        android:hint="Имя пользователя"
+        android:paddingLeft="5dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/sign_in_user_email"
+        android:layout_width="330dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_bg"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="15dp"
+        android:elevation="1dp"
+        android:inputType="textEmailAddress"
+        android:hint="Электронная почта или номер телефона"
+        android:paddingLeft="5dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_user_name" />
+
+    <EditText
+        android:id="@+id/sign_in_password"
+        android:layout_width="330dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_bg"
+        android:drawableLeft="@drawable/lock"
+        android:inputType="textPassword"
+        android:drawablePadding="15dp"
+        android:elevation="1dp"
+        android:hint="Пароль"
+        android:paddingLeft="5dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_in_user_email" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Или"
+        android:textColor="@color/darkGrayLogo"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/sign_in_password"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/sign_in_password"
+        app:layout_constraintTop_toBottomOf="@+id/sign_in_password" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darkGrayLogo"
+        android:layout_marginTop="4dp"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Зарегистрироваться через"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="155dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_shape_lg"
+        android:drawableLeft="@drawable/google"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingLeft="15dp"
+        android:text="Google"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintHorizontal_bias="0.262"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button2"
+        android:layout_width="155dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_shape_lg"
+        android:drawableLeft="@drawable/facebook"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingLeft="15dp"
+        android:text="Facebook"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.683"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button3"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/blue_btn"
+        android:fontFamily="sans-serif-condensed"
+        android:outlineSpotShadowColor="@color/lightBlueLogo"
+        android:shadowColor="@color/lightBlueLogo"
+        android:outlineAmbientShadowColor="@color/lightBlueLogo"
+        android:text="Создать аккаунт"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/go_login_user_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Уже есть учетная запись"
+        android:textColor="@color/lightBlueLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/back_home"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <TextView
+        android:id="@+id/menu_d_food_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:text="Название продукта"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_home" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:elevation="0dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_d_food_name">
+
+<!--        <ImageView-->
+<!--            android:id="@+id/menu_d_food_image"-->
+<!--            android:layout_width="300dp"-->
+<!--            android:layout_height="200dp"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            android:src="@drawable/logo" />-->
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Описание"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+    <TextView
+        android:id="@+id/menu_d_food_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="50dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="18sp"
+        android:text="Хрустящие картофельные дольки с обжаренным беконом и плавленым сыром, идеальное сочетание вкусов для любителей сытного перекуса"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Ингридиенты"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_d_food_description" />
+
+    <TextView
+        android:id="@+id/menu_d_food_ingridients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="* картофель\n* бекон\n* сыр\n* масло для жарки
+
+"
+        app:layout_constraintStart_toStartOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/add_to_cart"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_marginStart="50dp"-->
+<!--        android:layout_marginTop="24dp"-->
+<!--        android:layout_marginEnd="50dp"-->
+<!--        android:background="@drawable/blue_btn"-->
+<!--        android:elevation="4dp"-->
+<!--        android:fontFamily="sans-serif-condensed"-->
+<!--        android:outlineAmbientShadowColor="@color/lightBlueLogo"-->
+<!--        android:outlineSpotShadowColor="@color/lightBlueLogo"-->
+<!--        android:shadowColor="@color/lightBlueLogo"-->
+<!--        android:text="Добавить в заказ"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="24sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/menu_d_food_ingridients" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

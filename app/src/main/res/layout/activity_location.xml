@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LocationActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="80dp"
+        android:textSize="26sp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Укажите местоположение"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_width="335dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:boxStrokeWidth="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+
+        <AutoCompleteTextView
+            android:id="@+id/locationList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Выберите локацию"
+            android:paddingLeft="16dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-condensed"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="360dp"
+        android:layout_height="165dp"
+        android:layout_marginBottom="40dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Чтобы обеспечить вам наилучшие условия питания, нам необходимо ваше разрешение на доступ к данным о местоположении вашего устройства. Включив услуги определения местоположения, мы можем предложить персональные рекомендации по ресторанам, точную оценку доставки и обеспечить бесперебойную работу службы доставки еды"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Design By\n lalala"
+        android:textAlignment="center"
+        android:textColor="@color/lightBlueLogo"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

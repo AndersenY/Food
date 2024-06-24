@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Details">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/back_stack"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/simpleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Оформление заказа"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_stack" />
+
+    <LinearLayout
+        android:id="@+id/name_l"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edit_text_bg"
+        android:elevation="1dp"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:paddingLeft="5dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/simpleText">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Логин"
+            android:textColor="@color/lightBlueLogo"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@color/white"
+            android:inputType="text"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text=""
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/address_l"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edit_text_bg"
+        android:elevation="1dp"
+        android:paddingLeft="5dp"
+        android:textSize="14sp"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_l">
+
+        <TextView
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Адрес"
+            android:textColor="@color/lightBlueLogo"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_marginStart="8dp"
+            android:text=""
+            android:textSize="18sp"
+            android:textColor="@android:color/darker_gray"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:backgroundTint="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/phone_l"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edit_text_bg"
+        android:elevation="1dp"
+        android:paddingLeft="5dp"
+        android:textSize="14sp"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/address_l">
+
+        <TextView
+            android:text="Телефон"
+            android:textSize="20sp"
+            android:layout_marginStart="4dp"
+            android:textColor="@color/lightBlueLogo"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_marginStart="8dp"
+            android:text=""
+            android:textSize="18sp"
+            android:textColor="@android:color/darker_gray"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"/>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:orientation="horizontal"
+        android:id="@+id/p_method"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edit_text_bg"
+        android:elevation="1dp"
+        android:paddingLeft="5dp"
+        android:textSize="14sp"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone_l">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Платежная система"
+            android:textColor="@color/lightBlueLogo"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="100dp"
+            android:layout_height="37dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView14"
+            android:background="@drawable/payment"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:orientation="horizontal"
+        android:id="@+id/total_price"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edit_text_bg"
+        android:elevation="1dp"
+        android:paddingLeft="5dp"
+        android:textSize="14sp"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p_method">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Итого"
+            android:textColor="@color/lightBlueLogo"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="0р"
+            android:textColor="@color/lightBlueLogo"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/place_my_order"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="32dp"
+        android:text="Добавить заказ"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:outlineAmbientShadowColor="@color/lightBlueLogo"
+        android:outlineSpotShadowColor="@color/lightBlueLogo"
+        android:shadowColor="@color/lightBlueLogo"
+        android:background="@drawable/blue_btn"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total_price" />
+
+    <TextView
+        android:id="@+id/change_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Изменить данные"
+        android:textColor="@color/lightBlueLogo"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-condensed"
+        android:outlineAmbientShadowColor="@color/lightBlueLogo"
+        android:outlineSpotShadowColor="@color/lightBlueLogo"
+        android:shadowColor="@color/lightBlueLogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/place_my_order" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

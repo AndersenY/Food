@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    android:elevation="2dp"
+    android:outlineAmbientShadowColor="@color/lightBlueLogo"
+    android:outlineSpotShadowColor="@color/lightBlueLogo">
+
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginLeft="8dp"
+            android:text="Подтверждение"
+            android:textColor="@color/lightBlueLogo"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Вы уверены в своем выборе?"
+            android:textColor="@color/darkGrayLogo"
+            android:textSize="18dp" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_consel"
+                android:layout_width="110dp"
+                android:layout_height="65dp"
+                android:layout_margin="16dp"
+                android:textSize="16sp"
+                android:elevation="2dp"
+                android:outlineAmbientShadowColor="@color/lightBlueLogo"
+                android:outlineSpotShadowColor="@color/lightBlueLogo"
+                android:fontFamily="sans-serif-condensed"
+                android:background="@drawable/blue_btn"
+                android:textColor="@color/white"
+                android:text="Нет"
+                app:layout_constraintEnd_toStartOf="@+id/btn_yes" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_yes"
+                android:layout_width="110dp"
+                android:layout_height="65dp"
+                android:layout_margin="16dp"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:elevation="2dp"
+                android:outlineAmbientShadowColor="@color/lightBlueLogo"
+                android:outlineSpotShadowColor="@color/lightBlueLogo"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Да"
+                android:background="@drawable/blue_btn"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+    
+</androidx.cardview.widget.CardView>

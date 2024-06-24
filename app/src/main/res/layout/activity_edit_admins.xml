@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.EditAdmins">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/back_stack"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Администраторы"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_stack" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/adminRV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/add_admin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:listitem="@layout/user"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/add_admin"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btn_shape_lg"
+        android:elevation="8dp"
+        android:fontFamily="sans-serif-condensed"
+        android:outlineAmbientShadowColor="@color/lightBlueLogo"
+        android:outlineSpotShadowColor="@color/lightBlueLogo"
+        android:shadowColor="@color/lightBlueLogo"
+        android:shadowDy="@integer/material_motion_duration_long_2"
+        android:text="Добавить администратора"
+        android:textAllCaps="false"
+        android:textColor="@color/lightBlueLogo"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
